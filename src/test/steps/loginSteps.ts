@@ -5,6 +5,7 @@ import { pageFixture } from "../../hooks/pageFixture";
 
 Given("User navigates to the application", async function () {
   await pageFixture.page.goto(process.env.BASEURL)
+  pageFixture.logger.info("Navigated")
 });
 
 Given("User click on the login link", async function () {
