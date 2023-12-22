@@ -1,4 +1,4 @@
-Feature: Prodcuts test
+Feature: Products test
 
   Background: 
     Given User navigates to the application
@@ -7,6 +7,7 @@ Feature: Prodcuts test
   Scenario Outline: Add to cart
     And User enter the username as "<username>"
     And User enter the password as "<password>"
+    When User click on the login button
     And user search for a "<book>"
     When user add the book to the cart
     Then the cart badge should get updated
