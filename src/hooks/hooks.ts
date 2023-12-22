@@ -19,6 +19,7 @@ import { invokeBrowser } from "../helper/browsers/browserManager";
 import { getEnv } from "../helper/env/env";
 import { createLogger } from "winston";
 import { options } from "../helper/utils/logger";
+const fs = require("fs-extra");
 
 let browser: Browser;
 let context: BrowserContext;
